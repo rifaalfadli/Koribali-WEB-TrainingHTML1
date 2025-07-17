@@ -229,6 +229,6 @@ Agar URL tidak acak seperti https://glorious-sunset-12345.netlify.app, kamu bisa
 
 ---
 
-## 🌐 Tampilan Website:
+## 📸 Tampilan Website:
 
 ![Tampilan Navigasi](image/tampilan-web.PNG)
