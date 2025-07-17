@@ -1,158 +1,62 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Belajar HTML Lengkap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
-    <!-- Komentar HTML -->
-    <!-- Ini adalah komentar -->
+    <!-- Section Title -->
+    <nav>
+      <h1>My First Heading</h1>
+      <h2>My First Heading</h2>
+      <h3>My First Heading</h3>
+      <h4>My First Heading</h4>
+      <h5>My First Heading</h5>
+      <h6>My First Heading</h6>
+    </nav>
 
-    <!-- Header & Navigasi -->
-    <header>
-      <h1>Selamat Datang di Website Pribadi</h1>
-      <nav>
-        <a href="#tentang">Tentang</a> | <a href="#kontak">Kontak</a> |
-        <a href="#tabel">Tabel</a>
-      </nav>
-    </header>
+    <!-- Section Paragraph -->
+    <section>
+      <p title="paragraph 1">My first paragraph</p>
+      <p title="Description of W3Schools" style="color: rgb(110, 175, 201)">
+        My first paragraph
+      </p>
+      <a href="https://www.w3schools.com">This is a link</a>
+      <br />
+      <img
+        src="https://1.bp.blogspot.com/-cTYzciChmfE/V5bsWCb0xXI/AAAAAAAACWw/lbbnQpulaZQbee5U3Dq_4xHCy649GYfzQCLcB/s1600/Gambar-kucing-27.JPG"
+        alt="gambar kucing"
+        width="600"
+        height="500"
+      />
+      <p>The pre tag preserves both spaces and line breaks:</p>
+      <pre>
+        My Bonnie lies over the ocean.
+        My Bonnie lies over the sea.
+        My Bonnie lies over the ocean.
+        Oh, bring back my Bonnie to me.
+      </pre>
+    </section>
 
-    <!-- Main -->
-    <main>
-      <!-- Section: Tentang -->
-      <section id="tentang">
-        <h2>Tentang Saya</h2>
-        <p>
-          Nama saya Rifa. Saat ini saya sedang mempelajari dasar-dasar HTML
-          untuk meningkatkan keterampilan dalam pengembangan web.
-        </p>
-        <p>
-          Saya memiliki minat pada dunia pemrograman, teknologi informasi, dan
-          desain antarmuka web yang efisien.
-        </p>
-      </section>
+    <!-- Form -->
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" /><br />
+    </form>
 
-      <!-- Gambar -->
-      <section>
-        <h2>Gambar Ilustrasi</h2>
-        <img src="https://via.placeholder.com/200" alt="Gambar Ilustrasi" />
-      </section>
-
-      <!-- Link -->
-      <section>
-        <h2>Referensi</h2>
-        <p>
-          Untuk mencari informasi tambahan, Anda dapat mengunjungi
-          <a href="https://www.google.com" target="_blank">Google</a>.
-        </p>
-      </section>
-
-      <!-- List -->
-      <section>
-        <h2>Makanan Favorit</h2>
-        <ul>
-          <li>Gorengan</li>
-          <li>Nasi Uduk</li>
-          <li>Permen</li>
-        </ul>
-
-        <h3>Langkah Belajar:</h3>
-        <ol>
-          <li>Menyalakan perangkat kerja</li>
-          <li>Menulis kode HTML</li>
-          <li>Menguji hasil melalui browser</li>
-        </ol>
-      </section>
-
-      <!-- Formulir -->
-      <section id="kontak">
-        <h2>Formulir Kontak</h2>
-        <form action="/submit" method="post">
-          Nama: <input type="text" name="nama" /><br />
-          Email: <input type="email" name="email" /><br />
-          Pesan: <textarea name="pesan"></textarea><br />
-          Jenis Kelamin:
-          <input type="radio" name="gender" value="pria" /> Pria
-          <input type="radio" name="gender" value="wanita" /> Wanita<br />
-          Hobi:
-          <input type="checkbox" name="hobi" value="ngoding" /> Ngoding
-          <input type="checkbox" name="hobi" value="makan" /> Makan<br />
-          Pilih Jurusan:
-          <select name="jurusan">
-            <option>Informatika</option>
-            <option>Desain</option></select
-          ><br />
-          <input type="submit" value="Kirim" />
-        </form>
-      </section>
-
-      <!-- Tabel -->
-      <section id="tabel">
-        <h2>Data Teman</h2>
-        <table border="1">
-          <tr>
-            <th>Nama</th>
-            <th>Umur</th>
-          </tr>
-          <tr>
-            <td>Rifa</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <td>Andi</td>
-            <td>25</td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- Div & Span -->
-      <section>
-        <div>
-          <h3>Contoh Elemen Div</h3>
-          <p>
-            Elemen div digunakan untuk membungkus bagian struktur HTML secara
-            blok.
-          </p>
-        </div>
-
-        <p>
-          Ini adalah paragraf dengan
-          <span>teks yang ditandai menggunakan span</span>.
-        </p>
-      </section>
-
-      <!-- Semantic HTML -->
-      <article>
-        <h2>Artikel Utama</h2>
-        <p>
-          Artikel ini membahas pentingnya memahami struktur dasar HTML dalam
-          pengembangan web modern.
-        </p>
-      </article>
-
-      <aside>
-        <h3>Catatan Tambahan</h3>
-        <p>
-          Pastikan untuk selalu melakukan validasi pada kode HTML yang telah
-          dibuat.
-        </p>
-      </aside>
-
-      <!-- Entity -->
-      <section>
-        <h2>Contoh Simbol (Entity)</h2>
-        <p>Simbol: &copy; &lt; &gt; &amp; &nbsp;</p>
-      </section>
-
-      <!-- JavaScript -->
-      <script>
-        alert("Selamat datang di halaman web ini.");
-      </script>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Rifa Web Development</p>
-    </footer>
+    <!-- Order -->
+    <ul>
+      <li>makan</li>
+      <li>minum</li>
+    </ul>
+    <ol>
+      <li>makan</li>
+      <li>minum</li>
+    </ol>
   </body>
 </html>
