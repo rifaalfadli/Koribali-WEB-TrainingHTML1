@@ -41,12 +41,67 @@
 
     <!-- Form -->
     <form>
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" value="John" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" value="Doe" /><br />
-      <label for="password">Password:</label><br />
-      <input type="password" id="password" name="password" /><br />
+      <!-- Input Nama -->
+      <label for="nama">Nama Lengkap:</label><br />
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="Masukkan nama"
+      /><br /><br />
+
+      <!-- Input Email -->
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="contoh@email.com"
+      /><br /><br />
+
+      <!-- Input Password -->
+      <label for="password">Kata Sandi:</label><br />
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <!-- Radio Button -->
+      <label>Jenis Kelamin:</label><br />
+      <input type="radio" id="pria" name="gender" value="pria" />
+      <label for="pria">Pria</label>
+      <input type="radio" id="wanita" name="gender" value="wanita" />
+      <label for="wanita">Wanita</label><br /><br />
+
+      <!-- Checkbox -->
+      <label>Minat:</label><br />
+      <input type="checkbox" id="coding" name="minat" value="coding" />
+      <label for="coding">Coding</label><br />
+      <input type="checkbox" id="desain" name="minat" value="desain" />
+      <label for="desain">Desain</label><br />
+      <input type="checkbox" id="drakor" name="minat" value="drakor" />
+      <label for="drakor">Drakor</label><br /><br />
+
+      <!-- Dropdown -->
+      <label for="kota">Kota Asal:</label><br />
+      <select id="kota" name="kota">
+        <option value="">--Pilih kota--</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="bogor">Bogor</option>
+        <option value="bandung">Bandung</option>
+        <option value="yogyakarta">Yogyakarta</option></select
+      ><br /><br />
+
+      <!-- Textarea -->
+      <label for="pesan">Pesan untuk Masa Depan:</label><br />
+      <textarea
+        id="pesan"
+        name="pesan"
+        rows="4"
+        cols="50"
+        placeholder="Tulis sesuatu..."
+      ></textarea
+      ><br /><br />
+
+      <!-- Tombol Kirim -->
+      <input type="submit" value="Kirim" />
     </form>
 
     <!-- Order -->
