@@ -167,7 +167,7 @@ Formulir dengan:
 
 📸 Tampilan di browser:
 
-![Tampilan Navigasi](image/tampilan-formulir.png)
+![Tampilan Navigasi](image/tampilan-formulir.PNG)
 
 ---
 
