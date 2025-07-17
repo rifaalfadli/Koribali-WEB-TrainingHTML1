@@ -1,117 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dokumen HTML Semantik</title>
   </head>
   <body>
-    <!-- Section Title -->
-    <nav>
+    <!-- Header -->
+    <header>
       <h1>My First Heading</h1>
-      <h2>My First Heading</h2>
-      <h3>My First Heading</h3>
-      <h4>My First Heading</h4>
-      <h5>My First Heading</h5>
-      <h6>My First Heading</h6>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+      <a href="#tentang">Tentang</a> |
+      <a href="#formulir">Formulir</a>
     </nav>
 
-    <!-- Section Paragraph -->
-    <section>
-      <p title="paragraph 1">My first paragraph</p>
-      <p title="Description of W3Schools" style="color: rgb(110, 175, 201)">
-        My first paragraph
-      </p>
-      <a href="https://www.w3schools.com">This is a link</a>
-      <br />
-      <img
-        src="https://1.bp.blogspot.com/-cTYzciChmfE/V5bsWCb0xXI/AAAAAAAACWw/lbbnQpulaZQbee5U3Dq_4xHCy649GYfzQCLcB/s1600/Gambar-kucing-27.JPG"
-        alt="gambar kucing"
-        width="600"
-        height="500"
-      />
-      <p>The pre tag preserves both spaces and line breaks:</p>
-      <pre>
-        My Bonnie lies over the ocean.
-        My Bonnie lies over the sea.
-        My Bonnie lies over the ocean.
-        Oh, bring back my Bonnie to me.
-      </pre>
-    </section>
+    <!-- Konten Utama -->
+    <main>
+      <!-- Seksi Paragraf dan Gambar -->
+      <section id="tentang">
+        <h2>My Second Heading</h2>
+        <p title="paragraph 1">My first paragraph</p>
+        <p title="Description of W3Schools" style="color: rgb(110, 175, 201)">
+          My first paragraph
+        </p>
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Kunjungi Google</a
+        >
+        <br />
+        <img
+          src="https://1.bp.blogspot.com/-cTYzciChmfE/V5bsWCb0xXI/AAAAAAAACWw/lbbnQpulaZQbee5U3Dq_4xHCy649GYfzQCLcB/s1600/Gambar-kucing-27.JPG"
+          alt="gambar kucing"
+          width="200"
+          height="200"
+        />
+        <p>The pre tag preserves both spaces and line breaks:</p>
+        <pre>
+My Bonnie lies over the ocean.
+My Bonnie lies over the sea.
+My Bonnie lies over the ocean.
+Oh, bring back my Bonnie to me.
+        </pre>
+      </section>
 
-    <!-- Form -->
-    <form>
-      <!-- Input Nama -->
-      <label for="nama">Nama Lengkap:</label><br />
-      <input
-        type="text"
-        id="nama"
-        name="nama"
-        placeholder="Masukkan nama"
-      /><br /><br />
+      <!-- Formulir -->
+      <section id="formulir">
+        <h2>Formulir Pendaftaran</h2>
+        <form>
+          <label for="nama">Nama Lengkap:</label><br />
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama"
+          /><br /><br />
 
-      <!-- Input Email -->
-      <label for="email">Email:</label><br />
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="contoh@email.com"
-      /><br /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="contoh@email.com"
+          /><br /><br />
 
-      <!-- Input Password -->
-      <label for="password">Kata Sandi:</label><br />
-      <input type="password" id="password" name="password" /><br /><br />
+          <label for="password">Kata Sandi:</label><br />
+          <input type="password" id="password" name="password" /><br /><br />
 
-      <!-- Radio Button -->
-      <label>Jenis Kelamin:</label><br />
-      <input type="radio" id="pria" name="gender" value="pria" />
-      <label for="pria">Pria</label>
-      <input type="radio" id="wanita" name="gender" value="wanita" />
-      <label for="wanita">Wanita</label><br /><br />
+          <label>Jenis Kelamin:</label><br />
+          <input type="radio" id="pria" name="gender" value="pria" />
+          <label for="pria">Pria</label>
+          <input type="radio" id="wanita" name="gender" value="wanita" />
+          <label for="wanita">Wanita</label><br /><br />
 
-      <!-- Checkbox -->
-      <label>Minat:</label><br />
-      <input type="checkbox" id="coding" name="minat" value="coding" />
-      <label for="coding">Coding</label><br />
-      <input type="checkbox" id="desain" name="minat" value="desain" />
-      <label for="desain">Desain</label><br />
-      <input type="checkbox" id="olahraga" name="minat" value="olahraga" />
-      <label for="olahraga">Olahraga</label><br /><br />
+          <label>Minat:</label><br />
+          <input type="checkbox" id="coding" name="minat" value="coding" />
+          <label for="coding">Coding</label><br />
+          <input type="checkbox" id="desain" name="minat" value="desain" />
+          <label for="desain">Desain</label><br />
+          <input type="checkbox" id="olahraga" name="minat" value="olahraga" />
+          <label for="olahraga">Olahraga</label><br /><br />
 
-      <!-- Dropdown -->
-      <label for="kota">Kota Asal:</label><br />
-      <select id="kota" name="kota">
-        <option value="">--Pilih kota--</option>
-        <option value="jakarta">Jakarta</option>
-        <option value="bogor">Bogor</option>
-        <option value="bandung">Bandung</option>
-        <option value="yogyakarta">Yogyakarta</option></select
-      ><br /><br />
+          <label for="kota">Kota Asal:</label><br />
+          <select id="kota" name="kota">
+            <option value="">--Pilih kota--</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="bogor">Bogor</option>
+            <option value="bandung">Bandung</option>
+            <option value="yogyakarta">Yogyakarta</option></select
+          ><br /><br />
 
-      <!-- Textarea -->
-      <label for="pesan">Pesan untuk Masa Depan:</label><br />
-      <textarea
-        id="pesan"
-        name="pesan"
-        rows="4"
-        cols="50"
-        placeholder="Tulis sesuatu..."
-      ></textarea
-      ><br /><br />
+          <label for="pesan">Pesan untuk Masa Depan:</label><br />
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="4"
+            cols="50"
+            placeholder="Tulis sesuatu..."
+          ></textarea
+          ><br /><br />
 
-      <!-- Tombol Kirim -->
-      <input type="submit" value="Kirim" />
-    </form>
+          <input type="submit" value="Kirim" />
+        </form>
+      </section>
 
-    <!-- Order -->
-    <ul>
-      <li>makan</li>
-      <li>minum</li>
-    </ul>
-    <ol>
-      <li>makan</li>
-      <li>minum</li>
-    </ol>
+      <!-- Daftar -->
+      <section>
+        <h2>Aktivitas</h2>
+        <ul>
+          <li>Makan</li>
+          <li>Minum</li>
+        </ul>
+        <ol>
+          <li>Makan</li>
+          <li>Minum</li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Website Rifa</p>
+    </footer>
   </body>
 </html>
