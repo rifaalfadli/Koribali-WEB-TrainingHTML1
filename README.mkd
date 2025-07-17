@@ -101,7 +101,7 @@ File `index.html` dibangun dengan struktur dasar HTML5:
 
 📸 Tampilan di browser:
 
-![Tampilan Navigasi](image/tampilan-navigasi.png)
+![Tampilan Navigasi](image/tampilan-navigasi.PNG)
 
 ---
 
@@ -119,7 +119,7 @@ Menampilkan paragraf, link ke Google, dan gambar kucing.
     >Kunjungi Google</a
   >
   <img
-    src="image/kucing-lucu.jpg"
+    src="image/gambar-kucing.jpg"
     alt="gambar kucing"
     width="200"
     height="200"
@@ -136,7 +136,7 @@ Menampilkan paragraf, link ke Google, dan gambar kucing.
 
 📸 Tampilan di browser:
 
-![Tampilan Navigasi](image/tampilan-tentang.png)
+![Tampilan Navigasi](image/tampilan-tentang.PNG)
 
 ---
 
@@ -212,7 +212,7 @@ Netlify adalah platform hosting gratis untuk website statis (seperti HTML, CSS, 
 2. Login dengan GitHub (jika perlu)
 3. Klik **"Add new site" → "Deploy manually"**
 4. Drag & drop folder `Koribali-WEB-TrainingHTML1`  
-   <img src="image/proses-drag-and-drop.png" alt="Proses Drag & Drop"/>
+   <img src="image/proses-drag-and-drop.PNG" alt="Proses Drag & Drop"/>
 5. Tunggu hingga proses selesai
 6. Salin URL hasil deployment
 
@@ -225,10 +225,10 @@ Agar URL tidak acak seperti https://glorious-sunset-12345.netlify.app, kamu bisa
 3. Cari bagian Site name, lalu klik Edit site name
 4. Ganti nama misalnya jadi belajar-html-rifa
 5. Selesai! URL berubah jadi <https://belajar-html-rifa.netlify.app>
-   <img src="image/rename-link.png" alt="Rename Link"/>
+   <img src="image/rename-link.PNG" alt="Rename Link"/>
 
 ---
 
 ## 🌐 Tampilan Website:
 
-![Tampilan Navigasi](image/tampilan-web.png)
+![Tampilan Navigasi](image/tampilan-web.PNG)
