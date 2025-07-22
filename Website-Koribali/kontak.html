@@ -1,26 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Koribali</title>
+    <title>Kontak | CV. KORI BALI</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <h1>CV. KORI BALI</h1>
-      <p>Architecture • Interior • Engineering • Contractor</p>
+      <div>
+        <img
+          src="./image/logo-koribali.jpg"
+          alt="logo-koribali"
+          width="100px"
+        />
+        <div>
+          <h1>Kontak | CV. KORI BALI</h1>
+          <p>Architecture • Interior • Engineering • Contractor</p>
+        </div>
+      </div>
     </header>
 
     <!-- Navigasi -->
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="struktur.html">Struktur</a></li>
-      <li><a href="galeri.html">Galeri</a></li>
-      <li><a href="projek.html">Proyek</a></li>
-      <li><a href="kontak.html">Kontak</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="struktur.html">Struktur</a></li>
+        <li><a href="proyek.html">Proyek</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
 
-    <main>Anda Berada di Page kontak</main>
+    <!-- Main Konten -->
+    <main>
+      <section id="informasi-kontak">
+        <h2>Informasi Kontak</h2>
+        <article>
+          <h3>Kantor Pusat</h3>
+          <p>Jl. Gunung Kerinci No. 22, Denpasar, Bali</p>
+        </article>
+
+        <article>
+          <h3>Kantor Cabang</h3>
+          <p>Jl. Haur Jaya 2 No. 16, Kel. Tanah Sareal, Kota Bogor</p>
+        </article>
+
+        <article>
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:cv.koribali@gmail.com">cv.koribali@gmail.com</a>
+          </p>
+        </article>
+
+        <article>
+          <h3>Telepon</h3>
+          <p><a href="#">0853 3359 6000</a></p>
+        </article>
+      </section>
+
+      <!-- Form Kontak Tambahan -->
+      <section id="form-kontak">
+        <h2>Hubungi Kami</h2>
+        <form>
+          <label for="nama">Nama:</label><br />
+          <input type="text" id="nama" name="nama" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="pesan">Pesan:</label><br />
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 CV. KORI BALI. All rights reserved.</p>
+    </footer>
   </body>
 </html>
