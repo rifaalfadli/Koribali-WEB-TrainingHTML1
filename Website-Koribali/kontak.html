@@ -76,38 +76,45 @@
       <section id="form-kontak">
         <h2>Hubungi Kami</h2>
         <form>
-          <label for="nama">Nama:</label><br />
-          <input
-            type="text"
-            id="nama"
-            name="nama"
-            placeholder="Masukkan Nama Anda"
-            size="25"
-            required
-          /><br /><br />
-
-          <label for="email">Email:</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Masukkan Alamat Email Anda"
-            size="25"
-            required
-          /><br /><br />
-
-          <label for="pesan">Pesan:</label><br />
-          <textarea
-            id="pesan"
-            name="pesan"
-            rows="5"
-            cols="50"
-            placeholder="Masukkan Pesan Anda"
-            required
-          ></textarea
-          ><br /><br />
-
-          <button type="submit">Kirim</button>
+          <div>
+            <label for="name">Nama:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Masukkan Nama Anda"
+              size="25"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan Alamat Email Anda"
+              size="25"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="message">Pesan:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="50"
+              placeholder="Masukkan Pesan Anda"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            <input type="submit" value="Kirim" />
+          </div>
         </form>
       </section>
     </main>
