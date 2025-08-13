@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeri Preview | CV. KORI BALI</title>
+    <title>CV. KORI BALI</title>
     <link rel="icon" type="image/png" href="./image/logo-koribali.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div>
-        <img
-          src="./image/logo-koribali.png"
-          alt="logo-koribali"
-          width="100px"
-        />
-        <div>
-          <h1>CV. KORI BALI</h1>
+    <header class="container">
+      <div class="header-branding">
+        <a href="./index.html">
+          <img
+            src="./image/logo-koribali.png"
+            alt="logo koribali"
+            width="100px"
+            class="header-logo-koribali"
+          />
+        </a>
+        <div class="header-title">
+          <a href="./index.html">
+            <h1>CV. KORI BALI</h1>
+          </a>
           <p>Architecture • Interior • Engineering • Contractor</p>
         </div>
       </div>
-
-      <!-- Navigasi Utama -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="struktur.html">Struktur Pegawai</a></li>
-          <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="galeri.html">Galeri</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-      </nav>
+      <div class="header-contact">
+        <img
+          src="./image/icon-telepon.svg"
+          alt="icon telepon"
+          class="header-icon-phone"
+        />
+        <span>0853-3359-6000</span>
+        <a href="./kontak.html" class="btn">Hubungi</a>
+      </div>
     </header>
+
+    <!-- Navigasi Utama-->
+    <nav class="main-nav">
+      <ul class="container">
+        <li><a href="./index.html">Beranda</a></li>
+        <li><a href="./struktur.html">Struktur Pegawai</a></li>
+        <li><a href="./proyek.html">Proyek</a></li>
+        <li><a href="./galeri.html">Galeri</a></li>
+        <li><a href="./kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
 
     <!-- Hero -->
     <section id="hero">
@@ -48,7 +69,7 @@
 
     <!-- Konten Utama -->
     <main>
-      <section id="galeri-preview">
+      <section id="galeri-preview" class="container">
         <div>
           <figure>
             <img src="./image/gambar14.PNG" alt="Tiang lampu jalan" />
@@ -99,8 +120,86 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 CV. KORI BALI. All rights reserved.</p>
+    <footer class="footer">
+      <div class="footer-top container">
+        <div class="footer-brand">
+          <div class="footer-brand-container">
+            <a href="./index.html">
+              <img
+                src="./image/logo-koribali.png"
+                alt="logo koribali"
+                width="100px"
+                class="footer-logo-kb"
+              />
+            </a>
+            <div class="footer-mitra">
+              <h4>Mitra Utama:</h4>
+              <div class="mitra-logo">
+                <a href="https://www.ypole.co.jp/english/" target="_blank"
+                  ><img src="./image/logo-yp.PNG" alt="logo yoshimoto pole"
+                /></a>
+                <a href="https://www.yspole.co.jp/index.html" target="_blank"
+                  ><img src="./image/logo-ys.PNG" alt="logo ys pole"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sosmed-icons">
+            <a href="#"
+              ><img src="./image/instagram-logo.svg" alt="icon ig"
+            /></a>
+            <a href="#"
+              ><img src="./image/linkedin-logo.svg" alt="icon linkdin"
+            /></a>
+            <a href="#"
+              ><img src="./image/twitter-logo.svg" alt="icon twitter"
+            /></a>
+            <a href="#"
+              ><img src="./image/tiktok-logo.svg" alt="icon tiktok"
+            /></a>
+            <a href="#"
+              ><img src="./image/youtube-logo.svg" alt="icon youtube"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="./index.html"><h4>Beranda</h4></a>
+            </li>
+            <li>
+              <a href="./struktur.html"><h4>Struktur Pegawai</h4></a>
+            </li>
+            <li>
+              <a href="./proyek.html"><h4>Proyek</h4></a>
+              <ol>
+                <li><a href="./proyek/proyek-2D.html">Proyek 2D</a></li>
+                <li><a href="./proyek/proyek-3D.html">Proyek 3D</a></li>
+                <li><a href="./proyek/proyek-VBA.html">Proyek VBA</a></li>
+                <li>
+                  <a href="./proyek/proyek-rendering.html">Proyek Rendering</a>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="./galeri.html"><h4>Galeri</h4></a>
+            </li>
+            <li>
+              <a href="./kontak.html"><h4>Kontak</h4></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Have questions or feedback? Email us at
+          <a href="mailto:cv.koribali@gmail.com">cv.koribali@gmail.com</a>
+        </p>
+        <p>&copy; 2025 CV. KORI BALI. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui;
+    line-height: 1.6;
+    background: #f8f9fa;
+    color: #1a1a1a;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75em 2em;
+    background: linear-gradient(to right, #0d3b66, #3399cc);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #3399cc, #0d3b66);
+    transform: scale(1.05);
+}
+
+/* ====Header==== */
+header {
+    background-color: #fefefe;
+    display: flex;
+    padding: 0.5em 0;
+    justify-content: space-between;
+}
+
+.header-branding {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}   
+
+.header-logo-koribali {
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: auto;
+}
+
+.header-title h1 {
+    font-size: 1.5em;
+}
+
+.header-title a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.header-title p {
+    font-size: 0.75em;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.header-contact span{
+    margin-right: 0.75em;
+}
+
+.header-icon-phone {
+    width: 20px;
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.header-btn-contact {
+    background: linear-gradient(to right, #0d3b66, #3399cc);
+    background-position: center;
+    margin-left: 1em;
+    color: #fefefe;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header-btn-contact:hover {
+    filter: saturate(100%) brightness(130%);
+}
+
+/* ====Navbar==== */
+.main-nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, #0d3b66, #3399cc);
+    z-index: 999;
+    padding: 0.625em 0;
+    font-size: 0.875em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 8em; 
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fefefe;
+    padding: 0.5em 1.5em;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fefefe;
+    padding: 0.5em 1.5em;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.main-nav a:hover {
+    background: linear-gradient(to bottom, #000d3b, #02294e);
+    filter: saturate(100%) brightness(130%);
+}
+
+/* ====Hero==== */
+.hero {
+    position: relative;
+    background-image: url('./image/gambar6.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fefefe;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+/* ====Main Konten==== */
+/* ===Tentang=== */
+.main-tentang {
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.main-tentang-container {
+    width: 60%;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 3em 6em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.4s ease;
+    transform-origin: center;
+}
+
+/* Hover effect */
+.main-tentang-container:hover {
+    transform: scale(1.02);
+    filter: saturate(1.4) brightness(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.main-tentang h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0d3b66;
+    margin-bottom: 1.5rem;
+}
+
+.main-tentang h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0d3b66;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* Paragraph */
+.main-tentang p {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Strong & Italic */
+.main-tentang strong {
+    color: #0d3b66;
+    font-weight: bold;
+}
+
+.main-tentang i {
+    color: #1c5d99;
+    font-style: italic;
+}
+
+/* ===layanan=== */
+.main-layanan {
+    margin-bottom: 120px;
+}
+
+.main-layanan h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0d3b66;
+    margin-bottom: 1.5rem;
+}
+
+.main-layanan h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0d3b66;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.daftar-layanan {
+    background: #ffffff;
+    padding: 1.5em 2.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center;
+    margin-bottom: 1em;
+}
+
+.daftar-layanan:hover {
+    transform: scale(1.02);
+    filter: saturate(1.4) brightness(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to right, #0d3b66, #3399cc); 
+    color: #ffffff; 
+}
+
+.daftar-layanan h3 {
+    color: #0d3b66;
+    margin-bottom: 0.25em;
+    transition: color 0.3s ease-in-out;
+}
+
+.daftar-layanan:hover h3 {
+    color: #ffffff; 
+}
+
+.daftar-layanan p {
+    transition: color 0.3s ease-in-out;
+}
+
+.daftar-layanan:hover p {
+    color: #f0f0f0; 
+}
+
+/* ===Proyek=== */
+.main-proyek {
+    margin-bottom: 120px;
+}
+
+.main-proyek h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0d3b66;
+    margin-bottom: 1.5rem;
+}
+
+.main-proyek h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0d3b66;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.main-proyek-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Card Styling */
+.main-proyek-container > article {
+    padding: 1.5em;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 0.75em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: all 0.4s ease;
+    transform-origin: center;
+}
+
+.main-proyek-container > article:hover {
+    transform: scale(1.02);
+    filter: saturate(1.4) brightness(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar di dalam card */
+.card-proyek a {
+    text-decoration: none;
+}
+
+.card-proyek img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.card-proyek h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #0d3b66;
+}
+
+.card-proyek p {
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+/* Frame Gambar */
+.image-frame {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: #f8f9fa; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.position-btn-proyek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2em;
+}
+
+/* ===Galeri=== */
+.main-galeri {
+    background: linear-gradient(to bottom, #3399cc, #bccada);
+    padding-top: 2.5em;
+    padding-bottom: 3.5em;
+    margin-bottom: 110px;
+    position: relative;
+}
+
+.main-galeri h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0d3b66;
+    margin-bottom: 1.5rem;
+}
+
+.main-galeri h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0d3b66;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.main-galeri-container {
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+    overflow-x: auto;
+    /* scroll-snap-type: x mandatory; */
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    scrollbar-color: #0d3b66 transparent;
+}
+
+.main-galeri-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.main-galeri-container::-webkit-scrollbar-thumb {
+    background-color: #0d3b66;
+    border-radius: 10px;
+}
+
+.main-galeri-container figure {
+    flex: 0 0 auto;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    transition: all 0.4s ease;
+    transform-origin: center;
+}
+
+.main-galeri-container figure:hover {
+    transform: scale(1.02);
+    filter: saturate(1.4) brightness(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.main-galeri-container img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.main-galeri-container figcaption {
+    padding: 0.75em;
+    font-size: 0.9rem;
+    color: #0d3b66;
+}
+
+.position-btn-galeri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2em;
+}
+
+/* ===kontak=== */
+.main-kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.main-kontak-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 3em;
+    border-radius: 1.5em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.main-kontak-container:hover {
+    transform: translateY(-5px);
+}
+
+.main-kontak h2 {
+    font-size: 2em;
+    color: #0d3b66;
+    margin-bottom: 1.2rem;
+}
+
+.main-kontak h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0d3b66;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.main-kontak p {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+/* ====Footer==== */
+.footer {
+    background: linear-gradient(to left, #0d3b66, #3399cc);
+    color: #ffffff;
+    padding: 3em 2em 2em;
+    font-size: 0.9em;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.75em;
+}
+
+.footer-brand-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.footer-logo-kb {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: auto;
+}
+
+.footer-mitra {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.mitra-logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.mitra-logo img {
+    height: 40px;
+}
+
+.sosmed-icons {
+    display: flex;
+    justify-content: start;
+    gap: 1.5em;
+}
+
+.sosmed-icons img{
+    width: 25px;
+    height: auto;
+}
+
+.footer-links ul {
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.footer-links h4 {
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    color: #fcd34d;
+}
+
+.footer-links ul,
+.footer-links ol  {
+    list-style: none;
+}
+
+.footer-links ol li {
+    margin-bottom: 0.5em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fcd34d;
+}
+
+.footer-bottom {
+    border-top: 1px solid #0d3b66;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #fcd34d;
+    text-decoration: underline;
+}
+
