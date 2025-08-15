@@ -12,47 +12,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="container">
-      <div class="header-branding">
-        <a href="./index.html">
-          <img
-            src="./image/logo-koribali.png"
-            alt="logo koribali"
-            width="100px"
-            class="header-logo-koribali"
-          />
-        </a>
-        <div class="header-title">
+    <header>
+      <div class="navbar container">
+        <div class="navbar-logo">
+          <input type="checkbox" id="sidebar-active" />
           <a href="./index.html">
-            <h1>CV. KORI BALI</h1>
+            <img
+              src="./image/logo-koribali.png"
+              alt="logo koribali"
+              width="100px"
+              class="logo-koribali"
+            />
           </a>
-          <p>Architecture • Interior • Engineering • Contractor</p>
+          <div class="navbar-title">
+            <a href="./index.html">
+              <h1>KORI BALI</h1>
+            </a>
+          </div>
+          <label for="sidebar-active" class="open-sidebar-button">
+            <img src="./image/icon-menu.svg" alt="icon menu" />
+          </label>
         </div>
-      </div>
-      <div class="header-contact">
-        <img
-          src="./image/icon-telepon.svg"
-          alt="icon telepon"
-          class="header-icon-phone"
-        />
-        <span>0853-3359-6000</span>
-        <a href="./kontak.html" class="btn">Hubungi</a>
+        <!-- Navigasi Utama-->
+        <nav class="navbar-menu">
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <img src="./image/icon-close.svg" alt="icon close" />
+            </label>
+            <ul>
+              <li><a href="./index.html">Beranda</a></li>
+              <li><a href="./struktur.html">Struktur Pegawai</a></li>
+              <li><a href="./proyek.html">Proyek</a></li>
+              <li><a href="./galeri.html">Galeri</a></li>
+              <li><a href="./kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
-
-    <!-- Navigasi Utama-->
-    <nav class="main-nav">
-      <ul class="container">
-        <li><a href="./index.html">Beranda</a></li>
-        <li><a href="./struktur.html">Struktur Pegawai</a></li>
-        <li><a href="./proyek.html">Proyek</a></li>
-        <li><a href="./galeri.html">Galeri</a></li>
-        <li><a href="./kontak.html">Kontak</a></li>
-      </ul>
-    </nav>
 
     <!-- Hero -->
     <section id="hero" class="hero">

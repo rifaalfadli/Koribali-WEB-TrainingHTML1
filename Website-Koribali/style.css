@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', system-ui;
 }
 
 body {
-    font-family: 'Segoe UI', system-ui;
+    width: 100%;
+    height: 100vh;
     line-height: 1.6;
     background: #f8f9fa;
     color: #1a1a1a;
@@ -33,115 +35,88 @@ body {
 
 /* ====Header==== */
 header {
-    background-color: #fefefe;
-    display: flex;
-    padding: 0.5em 0;
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fefefe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
 }
 
-.header-branding {
+.navbar {
     display: flex;
-    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    color: #fefefe;
+    padding: 0.7em 0;
+    font-size: 0.875em;
+}
+
+.navbar-logo {
+    display: flex;
+    gap: 0.8em;
     align-items: center;
 }   
 
-.header-logo-koribali {
+.logo-koribali {
     display: flex;
     align-items: center;
-    width: 65px;
+    width: 50px;
     height: auto;
 }
 
-.header-title h1 {
-    font-size: 1.5em;
-}
-
-.header-title a {
+.navbar-title a {
     text-decoration: none;
     color: #1a1a1a;
 }
 
-.header-title p {
-    font-size: 0.75em;
+.navbar-title h1 {
+    font-size: 2em;
 }
 
-.header-contact {
+.links-container {
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    font-size: 1em;
-    font-weight: 600;
 }
 
-.header-contact span{
-    margin-right: 0.75em;
+#sidebar-active {
+    display: none;
 }
 
-.header-icon-phone {
-    width: 20px;
-    height: auto;
-    margin-right: 0.5em;
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+    cursor: pointer;
 }
 
-.header-btn-contact {
-    background: linear-gradient(to right, #0d3b66, #3399cc);
-    background-position: center;
-    margin-left: 1em;
-    color: #fefefe;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    border: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.header-btn-contact:hover {
-    filter: saturate(100%) brightness(130%);
-}
-
-/* ====Navbar==== */
-.main-nav {
-    position: sticky;
-    top: 0;
-    background: linear-gradient(to right, #0d3b66, #3399cc);
-    z-index: 999;
-    padding: 0.625em 0;
-    font-size: 0.875em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.main-nav ul {
+.navbar-menu ul {
     display: flex;
     list-style: none;
-    justify-content: center;
     align-items: center;
-    gap: 8em; 
+    gap: 2em; 
 }
 
-.main-nav a {
+.navbar-menu a {
     text-decoration: none;
-    color: #fefefe;
-    padding: 0.5em 1.5em;
+    font-weight: 500;
+    color: #1a1a1a;
+    padding: 0.7em 1.5em;
     transition: all 0.2s ease-in-out;
     display: inline-block;
 }
 
-.main-nav a {
-    text-decoration: none;
+.navbar-menu a:hover {
+    background: #0d3b66;
     color: #fefefe;
-    padding: 0.5em 1.5em;
-    transition: all 0.2s ease-in-out;
-    display: inline-block;
-}
-
-.main-nav a:hover {
-    background: linear-gradient(to bottom, #000d3b, #02294e);
     filter: saturate(100%) brightness(130%);
 }
 
 /* ====Hero==== */
 .hero {
     position: relative;
-    background-image: url('./image/gambar6.jpg');
+    background: url('./image/gambar6.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -150,7 +125,7 @@ header {
     justify-content: center;
     color: #fefefe;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-shadow: 2px 2px 4px #000;
 }
 
@@ -181,7 +156,6 @@ header {
 /* ====Main Konten==== */
 /* ===Tentang=== */
 .main-tentang {
-    /* background-color: #000; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,7 +184,7 @@ header {
 /* Heading */
 .main-tentang h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: #0d3b66;
     margin-bottom: 1.5rem;
 }
@@ -229,7 +203,7 @@ header {
 .main-tentang p {
     line-height: 1.8;
     font-size: 1.05rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.2em;
 }
 
 /* Strong & Italic */
@@ -531,7 +505,7 @@ header {
 .footer {
     background: linear-gradient(to left, #0d3b66, #3399cc);
     color: #ffffff;
-    padding: 3em 2em 2em;
+    padding: 3em 0 2em;
     font-size: 0.9em;
 }
 
@@ -623,6 +597,7 @@ header {
 }
 
 .footer-bottom {
+    margin: 0 2em;
     border-top: 1px solid #0d3b66;
     padding-top: 1em;
     text-align: center;
