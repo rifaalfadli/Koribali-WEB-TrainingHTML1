@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     background: #f8f9fa;
     color: #1a1a1a;
+    /* padding-top: 64px; */
 }
 
 .container {
@@ -35,16 +36,18 @@ body {
 
 /* ====Header==== */
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 999;
     background: #fefefe;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
 }
 
 .navbar {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +62,7 @@ header {
     align-items: center;
 }  
 
-.navbar-logo label {
+.icon-menu, .icon-close, .overlay {
     display: none;
 }
 
@@ -106,8 +109,8 @@ header {
 .navbar-menu a {
     text-decoration: none;
     font-weight: 500;
-    color: #1a1a1a;
-    padding: 0.7em 1.5em;
+    color: black;
+    padding: 0.8em 1.5em;
     transition: all 0.2s ease-in-out;
     display: inline-block;
 }
@@ -118,23 +121,10 @@ header {
     filter: saturate(100%) brightness(130%);
 }
 
-/* #sidebar-active {
-    display: none;
-}
-
-.open-sidebar-button, .close-sidebar-button {
-    display: none;
-    cursor: pointer;
-} */
-
-
-
-
-
 /* ====Hero==== */
 .hero {
     position: relative;
-    background: url('./image/gambar6.jpg') no-repeat;
+    background: url('./image/gambar3-hero.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -174,6 +164,7 @@ header {
 /* ====Main Konten==== */
 /* ===Tentang=== */
 .main-tentang {
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
