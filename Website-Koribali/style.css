@@ -10,7 +10,6 @@ body {
     line-height: 1.6;
     background: #f8f9fa;
     color: #1a1a1a;
-    /* padding-top: 64px; */
 }
 
 .container {
@@ -36,11 +35,11 @@ body {
 
 /* ====Header==== */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
     background: #fefefe;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
 }
@@ -164,7 +163,6 @@ header {
 /* ====Main Konten==== */
 /* ===Tentang=== */
 .main-tentang {
-    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
