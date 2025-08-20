@@ -1,5 +1,5 @@
-
 @media screen and (min-width: 1150px) and (max-width: 1524px) {
+    /* Proyek */
     .main-proyek-container {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
@@ -29,8 +29,8 @@
     }
 }
 
-/* Tablet (≤ 1024px) */
-@media screen and (max-width: 1260px) {
+/* Laptop L */
+@media screen and (max-width: 1280px) {
     /* Navbar */
     .navbar {
         font-size: 0.8em;
@@ -58,19 +58,15 @@
     }
 
     .hero-content a {
-        font-size: 0.9em;
+        font-size: 0.95em;
     }
 
     .hero h2 {
-        font-size: 2.2em;
+        font-size: 2.5em;
         margin-bottom: 0.35em;
     }
 
-    .hero p {
-        font-size: 0.9em;
-    }
-
-    /* Main Tentang */
+    /* Tentang */
     .main-tentang h2 {
         font-size: 2.3em;
     }
@@ -86,39 +82,41 @@
         margin-bottom: 1.2em;
     }
 
-    /* Main Layanan */
+    /* Layanan */
     .main-layanan h2 {
         font-size: 2.3em;
     }
 
-    /* Main Proyek */
+    .daftar-layanan {
+        padding: 1.5em 2.5em;
+        border-radius: 0.5em;
+    }
+
+    /* Proyek */
     .main-proyek h2 {
         font-size: 2.3em;
     }
 
     .card-proyek h3 {
-        font-size: 1.15rem;
         margin-bottom: 0.25em;
     }
-    .card-proyek p {
-        font-size: 0.9em;
-    }
 
-    /* Main Galeri */
+    /* Galeri */
     .main-galeri h2 {
         font-size: 2.3em;
     }
 }
 
-/* Mobile (≤ 880px) */
+/* Tablet */
 @media screen and (max-width: 960px) {
-    /* Header */
+    /* Navbar */
     .navbar {
         width: 100%;
         flex-direction: column;
     }
 
     .navbar-logo {
+        position: relative;
         width: 80%;
         margin: 0 auto;
     }
@@ -148,6 +146,10 @@
     }
 
     .navbar-menu ul {
+        background-color: #fefefe;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
+        position: fixed;
+        top: 52px;
         width: 100%;
         flex-direction: column;
         gap: 0;
@@ -183,53 +185,116 @@
         display: block;
     }
 
-    /* #menu:checked ~ .navbar-logo .overlay {
+    #menu:checked ~ .navbar-logo .overlay {
         display: block;
         height: 100%;
         width: 100%;
         position: fixed;
         top: 0;
         left: 0;
-    } */
+    }
 
     /* Hero */
     .hero {
         height: 650px;
     }
 
-    .hero-content {
-        max-width: 700px;
-    }
-
-    .hero-content a {
-        font-size: 0.8em;
-    }
-
-    .hero h2 {
-        font-size: 1.8em;
-        margin-bottom: 0.3em;
-    }
-
     .hero p {
-        font-size: 0.85em;
+        font-size: 0.9em;
     }
     
+    /* Tentang */
+    .main-tentang h2 {
+        font-size: 2.4em;
+    }
 
     .main-tentang-container {
-        width: 100%;
+        width: 80%;
         padding: 3em 4em;
     }
 
-    .main-te
-
     .main-tentang p {
-        text-align: center;
+        line-height: 1.6;
+    }
+
+    /* Layanan */
+    .main-layanan h2 {
+        font-size: 2.4em;
+    }
+
+        /* Proyek */
+    .main-proyek h2 {
+        font-size: 2.4em;
+    }
+
+    .card-proyek h3 {
+        font-size: 1.2em;
+        margin-bottom: 0.3em;
+    }
+
+    .card-proyek p {
         font-size: 0.85em;
-        align-items: center;
+    }
+
+    /* Galeri */
+    .main-galeri h2 {
+        font-size: 2.4em;
+    }
+    
+    /* Kontak */
+    .main-kontak-container {
+        max-width: 600px;
+    }
+
+    .main-kontak h2 {
+        font-size: 1.7em;
+    }
+
+    .main-kontak p {
+        font-size: 1.05em;
+    }
+
+    /* Footer */
+    .footer-logo-kb {
+        width: 90px;
+    }
+
+    .mitra-logo img {
+        height: 35px;
     }
 }
 
-/* Extra Small (≤ 480px) */
-@media screen and (max-width: 480px) {
+/* Handphone */
+@media screen and (max-width: 730px) {
+    .container, .navbar-logo {
+        width: 90%;
+    }
 
+    /* Hero */
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content {
+        /* background-color: blanchedalmond; */
+        max-width: 330px;
+    }
+
+    .hero h2 {
+        font-size: 1.7em;
+        margin-bottom: 0.4em;
+    }
+
+    .hero p {
+        font-size: 0.8em;
+        padding: 0 1.5em;
+        margin-bottom: 1.25em;
+    }
+
+    .hero a {
+        font-size: 0.8em;
+    }
+
+    /* Tentang */
+    
 }
