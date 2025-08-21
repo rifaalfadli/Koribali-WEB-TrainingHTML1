@@ -212,7 +212,7 @@ header {
 
 .main-tentang p {
     line-height: 1.7;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 1.15em;
 }
 
@@ -541,7 +541,7 @@ header {
 .footer-logo-kb {
     display: flex;
     align-items: center;
-    width: 100px;
+    width: 90px;
     height: auto;
 }
 
@@ -573,7 +573,7 @@ header {
 }
 
 .sosmed-icons img{
-    width: 25px;
+    width: 30px;
     height: auto;
 }
 
