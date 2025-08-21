@@ -309,7 +309,6 @@ header {
 
 .main-proyek-container {
     display: grid;
-    /* tolong nanti pas ukuran hp kita ubah ukuran ini jadi minmax(1fr, 1fr) */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
