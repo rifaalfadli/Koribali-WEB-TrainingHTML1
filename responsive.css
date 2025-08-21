@@ -94,6 +94,10 @@
         font-size: 2.3em;
     }
 
+    .main-tentang p {
+        font-size: 0.95em;
+    }
+
     .main-tentang-container {
         width: 70%;
         padding: 2em 4em;
@@ -239,7 +243,7 @@
     }
 
     .main-tentang p {
-        font-size: 0.9em;
+        font-size: 1em;
         line-height: 1.6;
     }
 
@@ -290,10 +294,10 @@
     }
 }
 
-/* Handphone */
+/* Mobile */
 @media screen and (max-width: 730px) {
     .container, .navbar-logo {
-        width: 90%;
+        width: 85%;
     }
 
     .logo {
@@ -302,7 +306,7 @@
 
     /* Hero */
     .hero {
-        height: 500px;
+        height: 550px;
     }
 
     .hero-content {
@@ -325,17 +329,17 @@
     }
 
     .main-tentang-container {
-        width: 90%;
+        width: 85%;
         padding: 1.6em 2.2em;
     }
 
     .main-tentang h2 {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
 
     .main-tentang p {
         text-align: justify;
-        font-size: 0.85em;
+        font-size: 0.8em;
     }
 
     /* Layanan */
@@ -344,20 +348,20 @@
     }
 
     .main-layanan h2 {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
 
     .daftar-layanan {
-        padding: 1.3em 2em;
+        padding: 1.1em 2em;
     }
 
     .daftar-layanan h3 {
-        font-size: 1.1em;
-        margin-bottom: 0.2;
+        font-size: 1em;
+        margin-bottom: 0.2em;
     }
 
     .daftar-layanan p {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     /* Proyek */
@@ -366,7 +370,7 @@
     }
 
     .main-proyek h2 {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
 
     .card-proyek p {
@@ -374,7 +378,7 @@
     }
 
     .position-btn-proyek a {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     /* Galeri */
@@ -383,7 +387,7 @@
     }
 
     .main-galeri h2 {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
 
     .main-galeri-container figure {
@@ -417,11 +421,11 @@
     }
 
     .main-kontak p {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     .main-kontak a {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     /* Footer */
@@ -431,11 +435,11 @@
     }
 
     .footer-brand {
-        gap: 1.7em;
+        gap: 1.8em;
     }
 
     .footer-logo-kb {
-        width: 75px;
+        width: 60px;
     }
 
     .footer-mitra h4 {
@@ -443,7 +447,7 @@
     }
 
     .mitra-logo img {
-        height: 28px;
+        height: 27px;
     }
 
     .sosmed-icons  {
@@ -462,4 +466,9 @@
     .footer-bottom p {
         font-size: 0.95em;
     }
+}
+
+/* Mobile M */
+@media screen and (max-width: 400px) {
+
 }
