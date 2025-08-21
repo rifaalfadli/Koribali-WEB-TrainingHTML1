@@ -76,10 +76,6 @@
     }
 
     /* Hero */
-    .hero {
-        height: 700px;
-    }
-
     .hero-content {
         max-width: 700px;
     }
@@ -146,6 +142,10 @@
         margin: 0 auto;
     }
 
+    .logo {
+        gap: 0.4em;
+    }
+
     .navbar-logo label {
         cursor: pointer;
         position: relative;
@@ -156,6 +156,10 @@
         align-items: center;
         width: 35px;
         height: 35px;
+    }
+
+    .navbar-title h1 {
+        font-size: 1.9em;
     }
 
     .icon-menu {
@@ -220,10 +224,6 @@
     }
 
     /* Hero */
-    .hero {
-        height: 650px;
-    }
-
     .hero-content {
         max-width: 550px;
     }
@@ -292,30 +292,119 @@
     .mitra-logo img {
         height: 35px;
     }
+
+    .footer-links ul {
+        gap: 2.5em;
+    }
+}
+
+/* Tablet M */
+@media screen and (max-width: 700px) {
+    /* Hero */
+    .hero-content {
+        max-width: 450px;
+    }
+
+    .hero h2 {
+        font-size: 2.1em;
+    }
+
+    .hero p {
+        font-size: 0.8em;
+    }
+
+    /* Kontak */
+    .main-kontak-container {
+        max-width: 470px;
+    }
+
+    .main-kontak h2 {
+        font-size: 1.8em;
+    }
+
+    .main-kontak p {
+        font-size: 0.95em;
+    }
+
+    /* Footer */
+     .footer {
+        padding-top: 2em;
+    }
+
+    .footer-top {
+        gap: 1.8em;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+    }
+
+    .footer-brand {
+        gap: 1em;
+    }
+
+    .footer-brand-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .footer-logo-kb {
+        width: 70px;
+    }
+
+    .footer-mitra h4 {
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    .footer-links a {
+        font-size: 1em;
+    }
+
+    .mitra-logo img {
+        height: 33px;
+    }
+
+    .sosmed-icons  {
+        justify-content: center;
+    }
+
+    .sosmed-icons img{
+        width: 32px;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .footer-bottom p {
+        font-size: 0.95em;
+    }
 }
 
 /* Mobile */
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 500px) {
     .container, .navbar-logo {
         width: 85%;
     }
 
-    .logo {
-        gap: 0.6em;
+    /* Navbar */
+    .navbar-title h1 {
+        font-size: 1.7em;
+    }
+
+    .navbar-logo label img {
+        width: 33px;
+        height: 33px;
     }
 
     /* Hero */
-    .hero {
-        height: 550px;
-    }
-
     .hero-content {
-        /* background-color: blanchedalmond; */
         max-width: 320px;
     }
 
     .hero h2 {
-        font-size: 1.6em;
+        font-size: 1.7em;
         margin-bottom: 0.4em;
     }
 
@@ -412,7 +501,7 @@
     }
 
     .main-kontak-container {
-        max-width: 340px;
+        max-width: 360px;
         padding: 2em;
     }
 
@@ -429,46 +518,39 @@
     }
 
     /* Footer */
-    .footer-top {
-        gap: 1.8em;
-        margin-bottom: 1.5em;
-    }
-
-    .footer-brand {
-        gap: 1.8em;
-    }
-
-    .footer-logo-kb {
-        width: 60px;
-    }
-
-    .footer-mitra h4 {
-        font-size: 0.9em;
-    }
-
-    .mitra-logo img {
-        height: 27px;
-    }
-
-    .sosmed-icons  {
-        justify-content: center;
-    }
-
-    .sosmed-icons img{
-        width: 32px;
-    }
-
-    .footer-links ul {
-        flex-direction: column;
-        gap: 0em;
-    }
-
-    .footer-bottom p {
-        font-size: 0.95em;
+    .footer-mitra h4, .footer-links a   {
+        font-size: 0.85em;
     }
 }
 
 /* Mobile M */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
+    .container, .navbar-logo {
+        width: 90%;
+    }
+
+    /* Navbar */
+    .navbar-title h1 {
+        font-size: 1.6em;
+    }
+
+    .navbar-logo label img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Hero */
+    .hero-content {
+        max-width: 250px;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.4em;
+    }
+
+    .hero p {
+        font-size: 0.7em;
+    }
 
 }

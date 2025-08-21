@@ -66,7 +66,7 @@ header {
 
 .logo {
     display: flex;
-    gap: 0.8em;
+    gap: 0.6em;
     align-items: center;
 }
 
@@ -517,7 +517,6 @@ header {
 }
 
 .footer-top {
-    /* background-color: #bd1e1e; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
