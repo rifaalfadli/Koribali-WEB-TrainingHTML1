@@ -6,7 +6,7 @@
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1350px) {
+@media screen and (min-width: 1090px) and (max-width: 1350px) {
     /* Footer */
     .footer-logo-kb {
         width: 90px;
@@ -25,7 +25,34 @@
     }
 
     .footer-links ul {
-        gap: 1.8em;
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1089px) {
+    /* Footer */
+    .footer-logo-kb {
+        width: 85px;
+    }
+
+    .footer-mitra h4, .footer-links h4 {
+        font-size: 0.95em;
+    }
+
+    .mitra-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 0;
+    }
+
+    .mitra-logo img {
+        height: 30px;
+    }
+
+    .footer-links ul {
+        gap: 1.2em;
     }
 }
 
@@ -37,15 +64,15 @@
     }
 
     .logo-koribali {
-        width: 45px;
+        width: 40px;
     }
 
     .navbar-title h1 {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
 
     .navbar-menu ul {
-        gap: 1em; 
+        gap: 0; 
     }
 
     /* Hero */
@@ -55,10 +82,6 @@
 
     .hero-content {
         max-width: 700px;
-    }
-
-    .hero-content a {
-        font-size: 0.95em;
     }
 
     .hero h2 {
@@ -73,13 +96,7 @@
 
     .main-tentang-container {
         width: 70%;
-        padding: 2em 5em;
-    }
-
-    .main-tentang p {
-        line-height: 1.7;
-        font-size: 0.95em;
-        margin-bottom: 1.2em;
+        padding: 2em 4em;
     }
 
     /* Layanan */
@@ -99,6 +116,10 @@
 
     .card-proyek h3 {
         margin-bottom: 0.25em;
+    }
+
+    .card-proyek p {
+        font-size: 0.8em;
     }
 
     /* Galeri */
@@ -129,8 +150,8 @@
     .navbar-logo label img {
         display: flex;
         align-items: center;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     .icon-menu {
@@ -149,7 +170,7 @@
         background-color: #fefefe;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
         position: fixed;
-        top: 52px;
+        top: 48px;
         width: 100%;
         flex-direction: column;
         gap: 0;
@@ -199,34 +220,30 @@
         height: 650px;
     }
 
+    .hero-content {
+        max-width: 550px;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
     .hero p {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
     
     /* Tentang */
-    .main-tentang h2 {
-        font-size: 2.4em;
-    }
-
     .main-tentang-container {
         width: 80%;
         padding: 3em 4em;
     }
 
     .main-tentang p {
+        font-size: 0.9em;
         line-height: 1.6;
     }
 
-    /* Layanan */
-    .main-layanan h2 {
-        font-size: 2.4em;
-    }
-
-        /* Proyek */
-    .main-proyek h2 {
-        font-size: 2.4em;
-    }
-
+    /* Proyek */
     .card-proyek h3 {
         font-size: 1.2em;
         margin-bottom: 0.3em;
@@ -235,15 +252,20 @@
     .card-proyek p {
         font-size: 0.85em;
     }
+    
+    .position-btn-proyek a {
+        font-size: 0.95em;
+    }
+
 
     /* Galeri */
-    .main-galeri h2 {
-        font-size: 2.4em;
+    .position-btn-galeri a {
+        font-size: 0.9em;
     }
-    
+
     /* Kontak */
     .main-kontak-container {
-        max-width: 600px;
+        max-width: 580px;
     }
 
     .main-kontak h2 {
@@ -251,12 +273,16 @@
     }
 
     .main-kontak p {
-        font-size: 1.05em;
+        font-size: 0.95em;
+    }
+
+    .main-kontak a {
+        font-size: 0.95em;
     }
 
     /* Footer */
     .footer-logo-kb {
-        width: 90px;
+        width: 80px;
     }
 
     .mitra-logo img {
@@ -270,6 +296,10 @@
         width: 90%;
     }
 
+    .logo {
+        gap: 0.6em;
+    }
+
     /* Hero */
     .hero {
         height: 500px;
@@ -277,24 +307,159 @@
 
     .hero-content {
         /* background-color: blanchedalmond; */
-        max-width: 330px;
+        max-width: 320px;
     }
 
     .hero h2 {
-        font-size: 1.7em;
+        font-size: 1.6em;
         margin-bottom: 0.4em;
     }
 
     .hero p {
-        font-size: 0.8em;
-        padding: 0 1.5em;
-        margin-bottom: 1.25em;
-    }
-
-    .hero a {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     /* Tentang */
-    
+    .main-tentang {
+        margin-bottom: 90px;
+    }
+
+    .main-tentang-container {
+        width: 90%;
+        padding: 1.6em 2.2em;
+    }
+
+    .main-tentang h2 {
+        font-size: 1.9em;
+    }
+
+    .main-tentang p {
+        text-align: justify;
+        font-size: 0.85em;
+    }
+
+    /* Layanan */
+    .main-layanan {
+        margin-bottom: 90px;
+    }
+
+    .main-layanan h2 {
+        font-size: 1.9em;
+    }
+
+    .daftar-layanan {
+        padding: 1.3em 2em;
+    }
+
+    .daftar-layanan h3 {
+        font-size: 1.1em;
+        margin-bottom: 0.2;
+    }
+
+    .daftar-layanan p {
+        font-size: 0.9em;
+    }
+
+    /* Proyek */
+    .main-proyek {
+        margin-bottom: 90px;
+    }
+
+    .main-proyek h2 {
+        font-size: 1.9em;
+    }
+
+    .card-proyek p {
+        font-size: 0.8em;
+    }
+
+    .position-btn-proyek a {
+        font-size: 0.9em;
+    }
+
+    /* Galeri */
+    .main-galeri {
+        margin-bottom: 90px;
+    }
+
+    .main-galeri h2 {
+        font-size: 1.9em;
+    }
+
+    .main-galeri-container figure {
+        width: 225px;
+    }
+
+    .main-galeri-container img {
+        height: 350px;
+    }
+
+    .main-galeri-container figcaption {
+        font-size: 0.85em;
+    }
+
+    .position-btn-galeri a {
+        font-size: 0.85em;
+    }
+
+    /* Kontak */
+    .main-kontak {
+        margin-bottom: 90px;
+    }
+
+    .main-kontak-container {
+        max-width: 340px;
+        padding: 2em;
+    }
+
+    .main-kontak h2 {
+        font-size: 1.45em;
+    }
+
+    .main-kontak p {
+        font-size: 0.9em;
+    }
+
+    .main-kontak a {
+        font-size: 0.9em;
+    }
+
+    /* Footer */
+    .footer-top {
+        gap: 1.8em;
+        margin-bottom: 1.5em;
+    }
+
+    .footer-brand {
+        gap: 1.7em;
+    }
+
+    .footer-logo-kb {
+        width: 75px;
+    }
+
+    .footer-mitra h4 {
+        font-size: 0.9em;
+    }
+
+    .mitra-logo img {
+        height: 28px;
+    }
+
+    .sosmed-icons  {
+        justify-content: center;
+    }
+
+    .sosmed-icons img{
+        width: 32px;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .footer-bottom p {
+        font-size: 0.95em;
+    }
 }
