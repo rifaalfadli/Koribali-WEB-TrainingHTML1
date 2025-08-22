@@ -668,7 +668,7 @@
     /* Navbar */
     .container, .navbar-logo {
         width: 90%;
-        overflow: hidden;
+
     }
 
     .navbar-title {
@@ -678,12 +678,12 @@
     /* Hero */
     .hero-content {
         width: 90%;
-        overflow: hidden;
+
     }
 
     /* Tentang */
     .main-tentang {
-        overflow: hidden;
+
     }
     .main-tentang-container p {
         text-align: center;
@@ -691,7 +691,7 @@
 
     /* Kontak */
     .main-kontak {
-        overflow: hidden;
+
     }
 
     .main-kontak-container {
@@ -700,6 +700,6 @@
 
     /* Footer */
     .footer {
-        overflow: hidden;
+
     }
 }

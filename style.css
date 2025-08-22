@@ -14,6 +14,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .btn {
@@ -58,6 +59,7 @@ header {
     gap: 0.8em;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }  
 
 #menu, .icon-menu, .icon-close, .overlay {
@@ -152,6 +154,7 @@ header {
 
 .hero-content {
     max-width: 800px;
+    overflow: hidden;
 }
 
 .hero h2 {
@@ -173,6 +176,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 120px;
+    overflow: hidden;
 }
 
 .main-tentang-container {
@@ -470,6 +474,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 120px;
+    overflow: hidden;
 }
 
 .main-kontak-container {
@@ -513,6 +518,7 @@ header {
     color: #ffffff;
     padding: 3em 0 2em;
     font-size: 0.9em;
+    overflow: hidden;
 }
 
 .footer-top {
