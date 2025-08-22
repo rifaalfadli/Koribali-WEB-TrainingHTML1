@@ -76,6 +76,10 @@
     }
 
     /* Hero */
+    .hero {
+        height: 630px;
+    }
+
     .hero-content {
         max-width: 700px;
     }
@@ -224,6 +228,10 @@
     }
 
     /* Hero */
+    .hero {
+        height: 450px;
+    }
+
     .hero-content {
         max-width: 550px;
     }
@@ -301,6 +309,10 @@
 /* Tablet M */
 @media screen and (max-width: 700px) {
     /* Hero */
+    .hero {
+        height: 320px;
+    }
+
     .hero-content {
         max-width: 450px;
     }
@@ -399,6 +411,10 @@
     }
 
     /* Hero */
+    .hero {
+        height: 250px;
+    }
+
     .hero-content {
         max-width: 320px;
     }
@@ -579,7 +595,9 @@
 
     .main-proyek-container {
         padding: 15px;
-        grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+
     }
 
     .card-proyek p {
@@ -636,5 +654,46 @@
 
     .sosmed-icons img{
         width: 29px;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 300px) {
+    /* Navbar */
+    .container, .navbar-logo {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-content {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    /* Tentang */
+    .main-tentang {
+        overflow: hidden;
+    }
+    .main-tentang-container p {
+        text-align: center;
+    }
+
+    /* Kontak */
+    .main-kontak {
+        overflow: hidden;
+    }
+
+    .main-kontak-container {
+        width: 90%;
+    }
+
+    /* Footer */
+    .footer {
+        overflow: hidden;
     }
 }
