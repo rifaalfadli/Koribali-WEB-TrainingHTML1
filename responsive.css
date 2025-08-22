@@ -76,12 +76,8 @@
     }
 
     /* Hero */
-    .hero {
-        height: 630px;
-    }
-
     .hero-content {
-        max-width: 700px;
+        width: 70%;
     }
 
     .hero h2 {
@@ -228,20 +224,16 @@
     }
 
     /* Hero */
-    .hero {
-        height: 450px;
-    }
-
     .hero-content {
-        max-width: 550px;
+        width: 80%;
     }
 
     .hero h2 {
-        font-size: 2em;
+        font-size: 2.25em;
     }
 
     .hero p {
-        font-size: 0.75em;
+        font-size: 0.85em;
     }
     
     /* Tentang */
@@ -309,20 +301,12 @@
 /* Tablet M */
 @media screen and (max-width: 700px) {
     /* Hero */
-    .hero {
-        height: 320px;
-    }
-
-    .hero-content {
-        max-width: 450px;
-    }
-
     .hero h2 {
         font-size: 1.8em;
     }
 
     .hero p {
-        font-size: 0.65em;
+        font-size: 0.75em;
     }
 
     /* Kontak */
@@ -411,21 +395,17 @@
     }
 
     /* Hero */
-    .hero {
-        height: 250px;
-    }
-
     .hero-content {
-        max-width: 320px;
+        width: 85%;
     }
 
     .hero h2 {
-        font-size: 1.55em;
-        margin-bottom: 0.4em;
+        text-align: center;
+        font-size: 1.5em;
     }
 
     .hero p {
-        font-size: 0.65em;
+        display: none;
     }
 
     /* Tentang */
@@ -557,17 +537,12 @@
 
     /* Hero */
     .hero-content {
-        max-width: 250px;
+        width: 90%;
     }
 
     .hero h2 {
         text-align: center;
-        font-size: 1.5em;
-    }
-
-    .hero p {
-        text-align: center;
-        font-size: 0.62em;
+        font-size: 1.3em;
     }
 
     /* Tentang */
@@ -583,7 +558,6 @@
     .main-tentang p {
         font-size: 0.7em;
     }
-
 
     /* Layanan */
     .main-layanan h2 {
@@ -603,7 +577,6 @@
         padding: 15px;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4,1fr);
-
     }
 
     .card-proyek p {
@@ -668,7 +641,10 @@
     /* Navbar */
     .container, .navbar-logo {
         width: 90%;
+    }
 
+    .navbar-logo {
+        overflow: hidden;
     }
 
     .navbar-title {
@@ -678,20 +654,36 @@
     /* Hero */
     .hero-content {
         width: 90%;
-
+        overflow: hidden;
     }
 
     /* Tentang */
     .main-tentang {
-
+        overflow: hidden;
     }
+
     .main-tentang-container p {
         text-align: center;
     }
 
+    /* Layanan */
+    .main-layanan {
+        overflow: hidden;
+    }
+
+    /* Proyek */
+    .main-proyek {
+        overflow: hidden;
+    }
+
+    /* Galeri */
+    .main-galeri {
+        overflow: hidden;
+    }
+
     /* Kontak */
     .main-kontak {
-
+        overflow: hidden;
     }
 
     .main-kontak-container {
@@ -700,6 +692,6 @@
 
     /* Footer */
     .footer {
-
+        overflow: hidden;
     }
 }
