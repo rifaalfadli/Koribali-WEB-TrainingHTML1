@@ -237,11 +237,11 @@
     }
 
     .hero h2 {
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
     .hero p {
-        font-size: 0.85em;
+        font-size: 0.75em;
     }
     
     /* Tentang */
@@ -318,11 +318,11 @@
     }
 
     .hero h2 {
-        font-size: 2.1em;
+        font-size: 1.8em;
     }
 
     .hero p {
-        font-size: 0.8em;
+        font-size: 0.65em;
     }
 
     /* Kontak */
@@ -420,12 +420,12 @@
     }
 
     .hero h2 {
-        font-size: 1.7em;
+        font-size: 1.55em;
         margin-bottom: 0.4em;
     }
 
     .hero p {
-        font-size: 0.7em;
+        font-size: 0.65em;
     }
 
     /* Tentang */
@@ -561,7 +561,13 @@
     }
 
     .hero h2 {
+        text-align: center;
         font-size: 1.5em;
+    }
+
+    .hero p {
+        text-align: center;
+        font-size: 0.62em;
     }
 
     /* Tentang */

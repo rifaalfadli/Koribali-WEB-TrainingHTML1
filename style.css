@@ -120,7 +120,7 @@ header {
 }
 
 .navbar-menu a:hover {
-    background: #0d3b66;
+    background: #4B0F0F;
     color: #fefefe;
     filter: saturate(100%) brightness(130%);
 }
