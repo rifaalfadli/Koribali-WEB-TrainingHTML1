@@ -265,7 +265,7 @@ header {
 
 .hero p {
     text-align: start;
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 1.2em;
     line-height: 1.6;
 }
@@ -725,72 +725,6 @@ header {
 
 /* === Contact Page === */
 /* Informasi Kontak */
-/* .informasi-kontak {
-    margin: 2em auto;
-    padding: 2em 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.informasi-kontak article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.informasi-kontak img {
-    display: block;
-    width: 2em;
-    height: 2em;
-    margin-bottom: 1.2em;
-}
-
-.informasi-kontak p {
-    font-size: 0.95em;
-}
-
-.informasi-kontak a {
-    text-decoration: none;
-    color: #1a1a1a;
-} */
-
-/* Form Kontak */
-/* .form-kontak {
-    padding: 2em 0;
-    border-top: 1px solid #1a1a1a;
-}
-
-.form-kontak form {
-    padding-bottom: 1em;
-}
-
-.form-kontak form {
-    padding-bottom: 1em;
-}
-
-.form-kontak > div {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 1em 0;
-}
-
-
-.form-control {
-    width: 100%;
-    border: 1.5px solid #1a1a1a;
-    border-radius: 5px;
-    padding: 0.7em;
-    font-size: 1em;
-    outline: 0;
-}
-
-.form-control:focus {
-    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
-} */
-
-
 .informasi-kontak {
     margin: 4em auto 5.5em;
     display: grid;
@@ -924,7 +858,6 @@ textarea.form-control {
     background: linear-gradient(to right, #3399cc, #0d3b66);
     transform: scale(1.05);
 }
-
 
 /* Map Styling */
 .map iframe {
