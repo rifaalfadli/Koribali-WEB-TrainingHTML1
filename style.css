@@ -856,7 +856,7 @@ header {
 
 .form-kontak {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2em;
 }
 
@@ -879,7 +879,7 @@ header {
 
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1em;
 }
 
