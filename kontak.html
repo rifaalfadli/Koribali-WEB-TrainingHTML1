@@ -67,13 +67,17 @@
     </header>
 
     <!-- Hero -->
-    <section id="hero">
-      <h2>Informasi Kontak</h2>
+    <section class="hero2">
+      <div class="hero-overlay2">
+        <div class="hero-content2">
+          <h2>Informasi Kontak</h2>
+        </div>
+      </div>
     </section>
 
     <!-- Breadcrumb -->
-    <nav>
-      <ol>
+    <nav class="breadcrumb">
+      <ol class="container">
         <li><a href="index.html">Beranda</a></li>
         <li>Kontak</li>
       </ol>
@@ -81,18 +85,21 @@
 
     <!-- Konten Utama -->
     <main>
-      <section id="informasi-kontak" class="container">
+      <section class="informasi-kontak container">
         <article>
+          <img src="./image/icon-office.svg" alt="icon offce" />
           <h3>Kantor Pusat</h3>
           <p>Jl. Gunung Kerinci No. 22, Denpasar, Bali</p>
         </article>
 
         <article>
+          <img src="./image/icon-address.svg" alt="icon address" />
           <h3>Kantor Cabang</h3>
           <p>Jl. Haur Jaya 2 No. 16, Kel. Tanah Sareal, Kota Bogor</p>
         </article>
 
         <article>
+          <img src="./image/icon-mail.svg" alt="icon mail" />
           <h3>Email</h3>
           <p>
             <a href="mailto:cv.koribali@gmail.com">cv.koribali@gmail.com</a>
@@ -100,55 +107,83 @@
         </article>
 
         <article>
+          <img src="./image/icon-telephone.svg" alt="icon telephone" />
           <h3>Telepon</h3>
           <p><a href="#">0853 3359 6000</a></p>
         </article>
       </section>
 
-      <!-- Form Kontak Tambahan -->
-      <section id="form-kontak" class="container">
+      <!-- Form Kontak -->
+      <section class="form-area container">
         <h2>Hubungi Kami</h2>
-        <form>
-          <div>
-            <label for="name">Nama:</label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Masukkan Nama Anda"
-              size="25"
-              required
-            />
+        <div class="form-kontak">
+          <form>
+            <div>
+              <label for="name">Nama:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="Masukkan Nama Anda"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Masukkan Email Anda"
+                  required
+                />
+              </div>
+              <div>
+                <label for="telephone">No Telepon:</label>
+                <input
+                  type="number"
+                  id="telephone"
+                  name="telephone"
+                  class="form-control"
+                  placeholder="Masukkan Nomor Telepon Anda"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="message">Pesan:</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                rows="5"
+                placeholder="Masukkan Pesan Anda"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <input type="submit" value="Kirim" class="btn-form" />
+            </div>
+          </form>
+
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.545076232548!2d106.79150477594037!3d-6.578949164314513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c448287b7e5b%3A0x6f5bc6291070766!2sJl.%20Haur%20Jaya%20IV%20No.11b%2C%20Kb.%20Pedes%2C%20Kec.%20Tanah%20Sereal%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016162!5e0!3m2!1sen!2sid!4v1756093521248!5m2!1sen!2sid"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <br />
-          <div>
-            <label for="email">Email:</label><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Masukkan Alamat Email Anda"
-              size="25"
-              required
-            />
-          </div>
-          <br />
-          <div>
-            <label for="message">Pesan:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              cols="50"
-              placeholder="Masukkan Pesan Anda"
-              required
-            ></textarea>
-          </div>
-          <br />
-          <div>
-            <input type="submit" value="Kirim" />
-          </div>
-        </form>
+        </div>
       </section>
     </main>
 
