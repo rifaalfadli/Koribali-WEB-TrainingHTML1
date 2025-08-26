@@ -484,13 +484,17 @@
     }
 
     /* Hero2 */
+    .hero2 {
+        height: 20vh;
+    }
+
     .hero-content2 {
         width: 85%;
     }
 
     .hero-content2 h2 {
         text-align: center;
-        font-size: 2.2em;
+        font-size: 2.15em;
     }
 
     /* Breadcrumb */
@@ -681,10 +685,6 @@
     /* Hero2 */
     .hero-content2 {
         width: 90%;
-    }
-
-    .hero-content2 h2 {
-        font-size: 2.3em;
     }
 
     /* Navbar */
