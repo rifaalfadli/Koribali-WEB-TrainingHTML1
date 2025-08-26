@@ -493,8 +493,7 @@
     }
 
     .hero-content2 h2 {
-        text-align: center;
-        font-size: 2.15em;
+        font-size: 1.6em;
     }
 
     /* Breadcrumb */
@@ -687,6 +686,10 @@
         width: 90%;
     }
 
+    .hero-content2 h2 {
+        font-size: 1.5em;
+    }
+
     /* Navbar */
     .navbar-title h1 {
         font-size: 1.6em;
@@ -704,7 +707,7 @@
 
     .hero h2 {
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.25em;
     }
 
     /* Tentang */
