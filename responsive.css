@@ -58,6 +58,24 @@
 
 /* Laptop L */
 @media screen and (max-width: 1280px) {
+    /* Hero2 */
+    .hero2 {
+        height: 30vh;
+    }
+
+    .hero-content2 h2 {
+        font-size: 2.9em;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 0.8em 0;
+    }
+
+    .breadcrumb ol {
+        font-size: 0.9em;
+    }
+
     /* Navbar */
     .navbar {
         font-size: 0.8em;
@@ -126,10 +144,45 @@
     .main-galeri h2 {
         font-size: 2.3em;
     }
+
+    /* === Contact Page === */
+    /* Informasi Kontak */
+    .informasi-kontak {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    /* Form Kontak */
+    .form-kontak {
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        gap: 1.5em;
+    }
+
+    .form-kontak label, .form-control, .btn-form {
+        font-size: 0.95em;
+    }
 }
 
 /* Tablet */
 @media screen and (max-width: 960px) {
+    /* Hero2 */
+    .hero2 {
+        height: 27vh;
+    }
+
+    .hero-content2 h2 {
+        font-size: 2.7em;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 0.7em 0;
+    }
+
+    .breadcrumb ol {
+        font-size: 0.85em;
+    }
+
     /* Navbar */
     .navbar {
         width: 100%;
@@ -261,7 +314,6 @@
         font-size: 0.95em;
     }
 
-
     /* Galeri */
     .position-btn-galeri a {
         font-size: 0.9em;
@@ -296,10 +348,36 @@
     .footer-links ul {
         gap: 2.5em;
     }
+
+    /* === Contact Page === */
+    /* Informasi Kontak */
+    .informasi-kontak img {
+        margin-bottom: 0.6em;
+    }
+
+    /* Form Kontak */
+    .form-kontak label, .form-control, .btn-form {
+        font-size: 1em;
+    }
+
+    .form-kontak {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap: 2em;
+    }
 }
 
 /* Tablet M */
 @media screen and (max-width: 700px) {
+    /* Hero2 */
+    .hero2 {
+        height: 25vh;
+    }
+
+    .hero-content2 h2 {
+        font-size: 2.6em;
+    }
+
     /* Hero */
     .hero h2 {
         font-size: 1.8em;
@@ -376,12 +454,52 @@
     .footer-bottom p {
         font-size: 0.85em;
     }
+
+    /* === Contact Page === */
+    /* Informasi Kontak */
+    .informasi-kontak article {
+        padding: 1.5em;
+    }
+
+    .informasi-kontak img {
+        width: 2.2em;
+        height: 2.2em;
+    }
+
+    .informasi-kontak h3 {
+        font-size: 1.05em;
+        margin-bottom: 0.5em;
+    }
+
+    .informasi-kontak p,
+    .informasi-kontak a {
+        font-size: 0.9em;
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 500px) {
     .container, .navbar-logo {
         width: 85%;
+    }
+
+    /* Hero2 */
+    .hero-content2 {
+        width: 85%;
+    }
+
+    .hero-content2 h2 {
+        text-align: center;
+        font-size: 2.2em;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        padding: 0.65em 0;
+    }
+
+    .breadcrumb ol {
+        font-size: 0.8em;
     }
 
     /* Navbar */
@@ -517,12 +635,56 @@
     .footer-mitra h3, .footer-links a   {
         font-size: 0.9em;
     }
+
+    /* === Contact Page === */
+    /* Informasi Kontak */
+    .informasi-kontak {
+        margin: 2.5em auto;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .informasi-kontak img {
+        margin-bottom: 0.5em;
+    }
+
+    .informasi-kontak h3 {
+        font-size: 1.1em;
+    }
+
+    .informasi-kontak p,
+    .informasi-kontak a {
+        font-size: 0.95em;
+    }
+
+    /* Form Kontak */
+    .form-area h2 {
+        font-size: 1.75em;
+    }
+
+    .form-area h2::after {
+        width: 90px;
+        height: 3px;
+    }
+
+    .form-kontak label, .form-control, .btn-form {
+        font-size: 0.9em;
+    }
+
 }
 
 /* Mobile M */
 @media screen and (max-width: 390px) {
     .container, .navbar-logo {
         width: 90%;
+    }
+
+    /* Hero2 */
+    .hero-content2 {
+        width: 90%;
+    }
+
+    .hero-content2 h2 {
+        font-size: 2.3em;
     }
 
     /* Navbar */
@@ -634,10 +796,62 @@
     .sosmed-icons img{
         width: 29px;
     }
+
+    /* === Contact Page === */
+    /* Informasi Kontak */
+    .informasi-kontak h3 {
+        font-size: 1.05em;
+    }
+
+    .informasi-kontak p,
+    .informasi-kontak a {
+        font-size: 0.9em;
+    }
+
+    /* Form Kontak */
+    .form-area h2 {
+        font-size: 1.7em;
+    }
+
+    .form-area h2::after {
+        width: 85px;
+    }
+
+    .form-kontak {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .form-kontak form {
+        background: #ffffff;
+        padding: 1.5em;
+        border-radius: 12px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .form-row {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .form-kontak label, .form-control, .btn-form {
+        font-size: 0.8em;
+    }
 }
 
 /* Mobile S */
 @media screen and (max-width: 300px) {
+    /* Hero2 */
+    .hero-content2 {
+        overflow: hidden;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        overflow: hidden;
+    }
+
     /* Navbar */
     .container, .navbar-logo {
         width: 90%;
@@ -692,6 +906,12 @@
 
     /* Footer */
     .footer {
+        overflow: hidden;
+    }
+
+    /* === Contact Page === */
+    /* Informasi Kontak */
+    .informasi-kontak, .form-area {
         overflow: hidden;
     }
 }
