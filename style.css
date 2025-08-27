@@ -513,7 +513,7 @@ header {
     overflow-x: auto;
     /* scroll-snap-type: x mandatory; */
     scroll-behavior: smooth;
-    padding: 1rem 0;
+    padding: rem 0;
     scrollbar-color: #0d3b66 transparent;
 }
 
@@ -874,7 +874,7 @@ textarea.form-control {
 }
 
 /* === Galery Page === */
-.carousel {
+/* .carousel {
     width: 70.5%;
     overflow-x: auto;
     margin: 3em auto;
@@ -949,7 +949,115 @@ textarea.form-control {
     border-radius: .5em;
     text-align: center;
     align-content: center;
+} */
+.carousel-container {
+    padding: 2.5em 0;
+    margin-bottom: 1.5em;
+    position: relative;
 }
+
+.carousel {
+    display: flex;
+    justify-content: start;
+    gap: 1.25em;
+    width: 75%;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 1em 0;
+    scroll-behavior: smooth;
+    anchor-name: --carousel;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+/* Marker indikator */
+.carousel::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .8em;
+    margin-top: 2em;
+}
+
+.card::scroll-marker {
+    content: "";
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.card::scroll-marker:target-current {
+    background-color: #0d3b66;
+}
+
+/* Hilangin scrollbar */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Scroll button */
+.carousel::scroll-button(right), .carousel::scroll-button(left) {
+    content: "→";
+    border: none;
+    background: linear-gradient(135deg, #0d3b66, #1c75d8);
+    font-size: 2.2em;
+    color: #ffffff;
+    height: 55px;
+    width: 55px;
+    font-family: Consolas;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: right center;
+    translate: -50%;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel::scroll-button(left) {
+    content: "←";
+    position-area: left center;
+    translate: 50%;
+}
+
+.carousel::scroll-button(right):hover,
+.carousel::scroll-button(left):hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.carousel::scroll-button(right):disabled, 
+.carousel::scroll-button(left):disabled {
+    opacity: 0.4;
+    cursor: auto;
+}
+
+/* Card */
+.card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    /* aspect-ratio: 5/3; */
+    height: auto;
+    /* border: 1.5px solid transparent; */
+    padding: 1.25em;
+    border-radius: 1.25em;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease;
+}
+
+/* Efek hover modern */
+.card:hover {
+    transform: scale(1.02) translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    /* border: 1.5px solid #0d3b66; */
+}
+
 
 @media(max-width: 500px) {
     .carousel {
