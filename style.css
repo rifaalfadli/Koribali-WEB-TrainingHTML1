@@ -509,7 +509,7 @@ header {
 .main-galeri-container {
     display: flex;
     justify-content: start;
-    gap: 1.5em;
+    gap: 1.4em;
     overflow-x: auto;
     padding: 1em 0;
     scroll-behavior: smooth;
@@ -909,82 +909,6 @@ textarea.form-control {
 }
 
 /* === Galery Page === */
-/* .carousel {
-    width: 70.5%;
-    overflow-x: auto;
-    margin: 3em auto;
-    display: flex;
-    gap: 1em;
-    scroll-behavior: smooth;
-    anchor-name: --carousel;
-    scroll-snap-type: x mandatory;
-    scroll-marker-group: after;
-}
-
-.carousel::scroll-marker-group {
-    display: flex;
-    justify-content: center;
-    gap: .8em;
-    margin-bottom: 4em;
-}
-
-.card::scroll-marker {
-    content: "";
-    height: 1em;
-    width: 1em;
-    background-color: grey;
-    border-radius: 50%;
-}
-
-.card::scroll-marker:target-current {
-    background-color: #3399cc;
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel::scroll-button(right), .carousel::scroll-button(left) {
-    content: "→";
-    border: none;
-    background-color: #3399cc;
-    font-size: 3em;
-    color: #ffffff;
-    height: 60px;
-    width: 60px;
-    font-family: Consolas;
-    border-radius: 50%;
-    padding-bottom: .1em;
-    cursor: pointer;
-    position: fixed;
-    position-anchor: --carousel;
-    position-area: right center;
-    translate: -50%;
-}
-
-.carousel::scroll-button(left) {
-    content: "←";
-    position-area: left center;
-    translate: 50%;
-}
-
-.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
-    opacity: 0.5;
-    cursor: auto;
-}
-
-.card {
-    scroll-snap-align: start;
-    flex: 0 0 20em;
-    aspect-ratio: 5/3;
-    height: auto;
-    border: 1.5px solid #0d3b66;
-    background-color: #ffffff;
-    padding: 1em;
-    border-radius: .5em;
-    text-align: center;
-    align-content: center;
-} */
 .carousel-container {
     padding: 2em 0 2.5em;
     margin-bottom: 1.5em;
