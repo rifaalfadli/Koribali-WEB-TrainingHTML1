@@ -145,6 +145,18 @@
         font-size: 2.3em;
     }
 
+    .main-galeri-container {
+        gap: 1.25em;
+    }
+
+    .main-galeri-container figure {
+        width: 260px;
+    }
+
+    .main-galeri-container img {
+        height: 400px;
+    }
+
     /* === Contact Page === */
     /* Informasi Kontak */
     .informasi-kontak {
@@ -387,6 +399,15 @@
         font-size: 0.75em;
     }
 
+    /* Galeri */
+    .main-galeri-container figure {
+        width: 250px;
+    }
+
+    .main-galeri-container img {
+        height: 380px;
+    }
+
     /* Kontak */
     .main-kontak-container {
         max-width: 470px;
@@ -592,20 +613,39 @@
         margin-bottom: 90px;
     }
 
+    .main-galeri-container {
+        gap: 1.25em;
+        border-radius: 1em;
+        padding: 0.5em 0;
+    }
+
     .main-galeri h2 {
         font-size: 1.8em;
     }
 
     .main-galeri-container figure {
-        width: 225px;
+        width: 220px;
     }
 
     .main-galeri-container img {
-        height: 350px;
+        height: 335px;
     }
 
     .main-galeri-container figcaption {
         font-size: 0.85em;
+    }
+
+    .main-galeri-container::scroll-button(right), 
+    .main-galeri-container::scroll-button(left) {
+        font-size: 1.8em;
+        background:none;
+        height: 45px;
+        width: 45px;
+        text-shadow:
+            -1px -1px 0 #3399cc,
+            1px -1px 0 #3399cc,
+            -1px  1px 0 #3399cc,
+            1px  1px 0 #3399cc;
     }
 
     .position-btn-galeri a {
@@ -671,6 +711,18 @@
 
     .form-kontak label, .form-control, .btn-form {
         font-size: 0.9em;
+    }
+
+    /* === Galeri Page === */
+    .carousel::scroll-button(right), 
+    .carousel::scroll-button(left) {
+        font-size: 1.8em;
+        height: 45px;
+        width: 45px;
+    }
+
+    .card {
+        flex: 0 0 100%;
     }
 
 }
@@ -767,6 +819,17 @@
 
     .main-galeri-container figcaption {
         font-size: 0.8em;
+    }
+
+    .main-galeri-container::scroll-button(right), 
+    .main-galeri-container::scroll-button(left) {
+        box-shadow: none;
+    }
+    
+    .main-galeri-container::scroll-button(right):hover,
+    .main-galeri-container::scroll-button(left):hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .position-btn-galeri a {
